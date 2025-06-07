@@ -3,4 +3,5 @@
 4|test 4|true
 5|Project is almost done |true
 6|02-08-2025 |false
-7|test 2|false
+7|06-08-2025| true
+|test 2|false
