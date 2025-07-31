@@ -14,8 +14,12 @@ fun isPrime(n: Int): Boolean {
     return true
 }
 
+fun listPrimesInRange(start: Int, end: Int): List<Int> {
+    return (start..end).filter { isPrime(it) }
+}
+
 fun main() {
-    val testNumbers = listOf(7, 2, 3, 4, 6, 10)
+    val testNumbers = listOf(7, 2, 3, 4, 6, 1900 , 19 , 23) 
     for (n in testNumbers) {
         if (isPrime(n)) {
             println("$n is a prime number")
@@ -23,4 +27,6 @@ fun main() {
             println("$n is not a prime number")
         }
     }
+    val primes = listPrimesInRange(1, 100)
+    println("Prime numbers between 1 and 100: $primes")
 }
