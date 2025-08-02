@@ -1,0 +1,19 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>/home/swap/Github/kotlin/03_Projects/TaskManager.jar</jar>
+  <outfile>/home/swap/Github/kotlin/03_Projects/TaskManager.exe</outfile>
+  <errTitle>Task Manager</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>https://adoptopenjdk.net/</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <jre>
+    <minVersion>1.8.0</minVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <bundledJre64Bit>false</bundledJre64Bit>
+  </jre>
+</launch4jConfig>
