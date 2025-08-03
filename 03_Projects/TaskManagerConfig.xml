@@ -1,15 +1,15 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
-  <headerType>gui</headerType>
+  <headerType>console</headerType>
   <jar>/home/swap/Github/kotlin/03_Projects/TaskManager.jar</jar>
   <outfile>/home/swap/Github/kotlin/03_Projects/TaskManager.exe</outfile>
-  <errTitle>Task Manager</errTitle>
+  <errTitle>Task Manager CLI</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
   <priority>normal</priority>
-  <downloadUrl>https://adoptopenjdk.net/</downloadUrl>
+  <downloadUrl>https://adoptium.net/</downloadUrl>
   <supportUrl></supportUrl>
-  <stayAlive>false</stayAlive>
+  <stayAlive>true</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <jre>
     <minVersion>1.8.0</minVersion>
