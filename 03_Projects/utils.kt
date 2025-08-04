@@ -42,6 +42,25 @@ fun markTaskAsDone(tasks: MutableList<Task>) {
     }
 }
 
+fun editTask(tasks: MutableList<Task>) {
+    print("Enter Task ID to edit: ")
+    val editId = readLine()?.toIntOrNull()
+    var taskToEdit = tasks.find { it.id == editId }
+    if (taskToEdit != null) {
+        print("Enter new description for Task ID ${taskToEdit.id}: ")
+        val newDescription = readLine()?.toString() ?: ""
+        if (newDescription.isBlank()) {
+            println("Description cannot be empty ❌")
+            return editTask(tasks)
+        }
+        taskToEdit.description = newDescription
+        saveTasksToFile(tasks)
+        println("Task ID ${taskToEdit.id} updated successfully ✏️")
+    } else {
+        println("Task not found ❌")
+    }
+}
+
 fun deleteTask(tasks: MutableList<Task>) {
     print("Enter Task ID to delete: ")
     val deleteId = readLine()?.toIntOrNull()
@@ -63,7 +82,8 @@ fun taskMenu(): String {
                     "2️⃣ 2  Show Tasks",
                     "3️⃣ 3  Mark as Done",
                     "4️⃣ 4  Delete Task",
-                    "5️⃣ 5  Exit"
+                    "5️⃣ 5  Edit Task",
+                    "6️⃣ 6 Exit"
             )
     return tasksMenu.joinToString("\n")
 }

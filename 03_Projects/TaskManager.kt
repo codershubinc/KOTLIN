@@ -1,6 +1,6 @@
 // defined data type class for task
 
-data class Task(val id: Int, val description: String, var isDone: Boolean)
+data class Task(val id: Int, var description: String, var isDone: Boolean)
 
 fun main() {
     val tasks = loadTasksFromFile()
@@ -19,8 +19,9 @@ fun main() {
             2 -> showTasks()
             3 -> markTaskAsDone(tasks)
             4 -> deleteTask(tasks)
-            5 -> {
-                println("Exiting... 👋")
+            5 -> editTask(tasks)
+            6 -> {
+                println("Exiting... 👋 by ,,,,,,,,")
                 return
             }
             else -> println("Invalid choice. Try again.")
