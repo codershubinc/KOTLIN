@@ -45,7 +45,7 @@ fun markTaskAsDone(tasks: MutableList<Task>) {
 fun editTask(tasks: MutableList<Task>) {
     print("Enter Task ID to edit: ")
     val editId = readLine()?.toIntOrNull()
-    var taskToEdit = tasks.find { it.id == editId }
+    val taskToEdit = tasks.find { it.id == editId }
     if (taskToEdit != null) {
         print("Enter new description for Task ID ${taskToEdit.id}: ")
         val newDescription = readLine()?.toString() ?: ""
