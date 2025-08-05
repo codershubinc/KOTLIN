@@ -12,7 +12,7 @@ A simple command-line task manager application written in Kotlin. This applicati
 - Delete tasks
 - Mark tasks as done
 
-### Technologies Used
+### Technologa`s Used
 
 - Kotlin
 - File I/O for task persistence
