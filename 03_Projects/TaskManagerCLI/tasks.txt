@@ -1,0 +1,7 @@
+3|test 0 of task editing|true
+4|test 4|true
+5|Project is almost done |true
+6|  |false
+7|t|false
+8|testing .exe|true
+9|test for 28 |true
