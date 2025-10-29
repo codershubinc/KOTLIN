@@ -11,8 +11,9 @@ fun main() {
         println(
                 "----------------------------------------- end task ----------------------------------------------"
         )
-        println("Current Tasks:")
-        println(tasks.toString())
+        println("~~~~~~~~~~~~Current Tasks:~~~~~~~~~~~~~~~~~")
+        println(utils.showTasks())
+        println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         println(utils.taskMenu())
         print("Enter choice: ")
         when (readLine()?.toIntOrNull()) {
